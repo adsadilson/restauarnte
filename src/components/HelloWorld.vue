@@ -20,6 +20,7 @@
       <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
     </ul>
     <h3>Ecosystem</h3>
+    <Smothie/>
     <ul>
       <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
       <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
@@ -31,8 +32,12 @@
 </template>
 
 <script>
+import Smothie from '@/assets/icons/smothie.svg'
 export default {
   name: 'HelloWorld',
+  component:{
+    Smothie
+  },
   props: {
     msg: String
   }
@@ -40,7 +45,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="less" scoped>
 h3 {
   margin: 40px 0 0;
 }
@@ -53,6 +58,6 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: red;
 }
 </style>
